@@ -44,7 +44,7 @@ const UserProfile = () => {
   return (
     <div className=''>
       <form className="max-w-sm mx-auto mt-56" onSubmit={handleSubmit}>
-        <h1 className='flex justify-center text-2xl font-bold mb-2'>Yay!ユーザー情報開示ツールβ版</h1>
+        <h1 className='flex justify-center text-xl sm:text-2xl font-bold mb-2'>Yay!ユーザー情報開示ツールβ版</h1>
         <p className='flex justify-center font-lg text-slate-600 pb-16'>下のフォームにユーザーIDを入力すると、Yayアプリ内からは見れない情報を見ることができます。</p> 
         <div className="mb-5">
           <label className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">対象ユーザーのID</label>
@@ -52,7 +52,7 @@ const UserProfile = () => {
         </div>
         <AlertDialog>
           <AlertDialogTrigger asChild>
-          {userId && <Button type="submit" className="flex justify-center text-white hover:bg-gray-700 focus:outline-none font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center">View 🛸</Button>}
+          {userId && <Button type="submit" className="flex justify-center text-white hover:bg-gray-700 focus:outline-none font-medium rounded-lg text-sm w-18 max-w-sm mx-auto mt-10 px-5 py-2.5 text-center">View 🛸</Button>}
           </AlertDialogTrigger>
           <AlertDialogContent>
             <AlertDialogHeader>
