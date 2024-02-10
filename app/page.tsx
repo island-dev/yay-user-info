@@ -23,7 +23,7 @@ const UserProfile = () => {
 
   const [userId, setUserId] = useState<string>('');
   const [errorMessage, setErrorMessage] = useState<string>('');
-  const { data, error } = useSWR(userId ? `${process.env.api-url}${userId}` : null, fetcher);
+  const { data, error } = useSWR(userId ? `一時的に隠してます/${userId}` : null, fetcher);
 
   const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
